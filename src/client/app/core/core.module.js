@@ -7,7 +7,6 @@
       'blocks.exception', 'blocks.logger', 'blocks.router',
       'ui.router',
       'ngplus',
-      'ngFileUpload', 'ngImgCrop',
       'core.entities', 'core.store'
     ]);
 })();

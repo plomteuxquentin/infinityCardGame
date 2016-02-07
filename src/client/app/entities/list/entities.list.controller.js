@@ -13,10 +13,11 @@
     var vm = this;
     vm.search = '';
     vm.displayActions = true;
-    vm.removeOnBackspace = removeOnBackspace;
     vm.spheres = [];
     vm.capacities = [];
     vm.cards = [];
+
+    vm.removeOnBackspace = removeOnBackspace;
 
     activate();
 

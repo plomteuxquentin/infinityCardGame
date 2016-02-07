@@ -18,7 +18,7 @@
         state: 'entities.list',
         config: {
           url: '/list',
-          templateUrl:'app/entities/list/entities.list.html',
+          templateUrl: 'app/entities/list/entities.list.html',
           controller: 'EntitiesListController',
           controllerAs: 'vm',
           title: 'entities list'

@@ -200,7 +200,7 @@
           description: 'Le chateau de Valéron est protégé par un mur de flèches à pointe d\'acier',
           attributs: {attaque: 0, defense: 1},
           capacities: [4],
-          spheres:[3],
+          spheres:[1],
           isAvatar: false
         },
         {
@@ -215,17 +215,7 @@
         },
         {
           id: 12,
-          name: 'Grand prêtre',
-          description: 'Ton dieu ne t\'apprend qu\'à tuer. Karametra m\'apprend à défendre ce' +
-          'qui m\'est cher. Pour cette raison, je triompherai.',
-          attributs: {attaque: 0, defense: 1},
-          capacities: [5],
-          spheres:[2],
-          isAvatar: false
-        },
-        {
-          id: 13,
-          name: 'Prêtre',
+          name: 'Grand Prêtre',
           description: 'Je ne demande que foi, loyauté, obéissance, confiance et dévotion absolue',
           attributs: {attaque: 0, defense: 1},
           capacities: [5, 7],
@@ -233,7 +223,7 @@
           isAvatar: false
         },
         {
-          id: 14,
+          id: 13,
           name: 'Ken le Défendeur',
           description: 'Je me bats pour les soleils, pour la surface,' +
           ' et tout ce qui se trouve entre eux',
@@ -243,7 +233,7 @@
           isAvatar: true
         },
         {
-          id: 15,
+          id: 14,
           name: 'Mouche géante',
           description: 'La durée de vie d\'une mouche se mesure très précisément : elle est courte',
           attributs: {attaque: 2, defense: 4},
@@ -252,7 +242,7 @@
           isAvatar: true
         },
         {
-          id: 16,
+          id: 15,
           name: 'Ver géant',
           description: 'Nourri de sang autochtone pour la taille et de cellules de monstruosité' +
           ' pour la vitesse, le verloque est parfait pour le nettoyage du sous-sol des jardins. ' +
@@ -263,7 +253,7 @@
           isAvatar: false
         },
         {
-          id: 17,
+          id: 16,
           name: 'Ver luissant',
           description: 'Ils brillent dans la nuit',
           attributs: {attaque: 0, defense: 1},

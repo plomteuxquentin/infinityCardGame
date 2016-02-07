@@ -1,5 +1,5 @@
 /* jshint -W117, -W030 */
-describe('blocks.exception', function() {
+xdescribe('blocks.exception', function() {
   var exceptionHandlerProvider;
   var mocks = {
     errorMessage: 'fake error',

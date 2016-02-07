@@ -22,7 +22,7 @@
           title: 'entities',
           settings: {
             nav: 10,
-            icon: 'members',
+            icon: 'entities',
             target: 'entities.list'
           }
         }

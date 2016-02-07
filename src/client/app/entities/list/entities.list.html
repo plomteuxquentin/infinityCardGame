@@ -24,8 +24,8 @@
   <md-card-content>
     <md-list>
       <md-list-item
-          ng-repeat="sphere in vm.spheres| filter:{$:vm.search}" class="member-list__item">
-          <div flex layout="row" layout-align="space-between" class="member-list__name">
+          ng-repeat="sphere in vm.spheres| filter:{$:vm.search}" class="card-list__item">
+          <div flex layout="row" layout-align="space-between" class="card-list__item__name">
             <p flex="20" class="md-subhead">{{sphere.name}}</p>
             <p flex>{{sphere.description}}</p>
             <div class="sphere" style="background-color: {{sphere.color}}"></div>
@@ -46,8 +46,8 @@
   <md-card-content>
     <md-list>
       <md-list-item
-          ng-repeat="capacity in vm.capacities | filter:{$:vm.search}" class="member-list__item">
-          <div flex layout="row" layout-align="space-between" class="member-list__name">
+          ng-repeat="capacity in vm.capacities | filter:{$:vm.search}" class="card-list__item">
+          <div flex layout="row" layout-align="space-between" class="card-list__item__name">
             <p flex="20" class="md-subhead">{{capacity.name}}</p>
             <p flex layout-align="start center">{{capacity.description}}</p>
             <div class="sphere" style="background-color:{{capacity.sphere.color}}"></div>
@@ -68,8 +68,8 @@
   <md-card-content>
     <md-list>
       <md-list-item
-          ng-repeat="card in vm.cards | filter:{$:vm.search}" class="member-list__item">
-          <div flex layout="row" layout-align="start center" class="member-list__name">
+          ng-repeat="card in vm.cards | filter:{$:vm.search}" class="card-list__item">
+          <div flex layout="row" layout-align="start center" class="card-list__item__name">
             <p flex="5">{{card.avatar}}</p>
             <p class="md-subhead" flex="15">{{card.name}}</p>
             <p flex="35">{{card.description}}</p>

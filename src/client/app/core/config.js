@@ -64,6 +64,7 @@
       .icon('view',           ICON_FOLDER + 'view.svg',            ICON_SIZE)
       .icon('dashboard',      ICON_FOLDER + 'dashboard.svg',       ICON_SIZE)
       .icon('settings',       ICON_FOLDER + 'settings.svg',        ICON_SIZE)
+      .icon('entities',       ICON_FOLDER + 'entities.svg',        ICON_SIZE)
       .icon('home',           ICON_FOLDER + 'home.svg',            ICON_SIZE);
 
     mdThemingProvider.theme('default')

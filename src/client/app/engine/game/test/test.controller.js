@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('engine.game.test')
+    .module('app.engine.game.test')
     .controller('GameTestController', GameTestController);
 
   GameTestController.$inject = ['communicationService'];
@@ -20,12 +20,14 @@
     function activate() {
       record = communicationService.record.getRecord('someUser');
 
-      record.subscribe('firstname', function(value){
+      record.subscribe('firstname', function(value) {
         vm.input = value;
+        console.log('subscribe');
       });
     }
 
     function inputChange() {
+      console.log('inputchange');
       record.set('firstname', vm.input);
     }
   }

@@ -2,7 +2,10 @@
   'use strict';
 
   angular
-    .module('engine.game.test', ['app.core', 'app.widgets'])
+    .module('app.engine.game.test', [
+      'app.core', 'app.widgets',
+      'app.engine.communication'
+    ])
     .run(appRun);
 
   appRun.$inject = ['routerHelper'];

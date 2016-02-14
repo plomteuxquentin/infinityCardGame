@@ -2,5 +2,5 @@
   'use strict';
 
   angular
-    .module('engine.communication', []);
+    .module('app.engine.communication', []);
 })();

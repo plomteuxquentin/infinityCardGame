@@ -5,8 +5,8 @@
   var config;
 
   config = {
-    appErrorPrefix: '[membershipManager Error] ',
-    appTitle: 'membershipManager'
+    appErrorPrefix: '[InfinityCardGame Error] ',
+    appTitle: 'Infinity card Game'
   };
 
   core.config(iconSet);

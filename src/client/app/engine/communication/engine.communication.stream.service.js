@@ -2,12 +2,12 @@
   'use strict';
 
   angular
-    .module('engine.communication')
-    .factory('communicationService', communication);
+    .module('app.engine.communication')
+    .service('communicationService', communication);
 
-  communication.$inject = ['deepstream'];
+  communication.$inject = [];
   /* @ngInject */
-  function communication(deepstream) {
+  function communication() {
     var client = deepstream('localhost:6020');
     client.login({username: 'ds-simple-input-' + client.getUid()});
     return client;

@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app.entities.list', ['app.core', 'app.widgets'])
+    .module('app.entities.list', [])
     .run(appRun);
 
   appRun.$inject = ['routerHelper'];

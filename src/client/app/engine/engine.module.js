@@ -3,7 +3,7 @@
 
   angular
     .module('app.engine', [
-      'engine.communication',
-      'engine.game'
+      'app.engine.communication',
+      'app.engine.game'
     ]);
 })();

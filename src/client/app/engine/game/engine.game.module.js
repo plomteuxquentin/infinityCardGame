@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('engine.game', [
-      'engine.communication'
+    .module('app.engine.game', [
+      'app.engine.game.test'
     ]);
 })();

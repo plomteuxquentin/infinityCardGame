@@ -9,7 +9,7 @@
   /* @ngInject */
   function communication() {
     var client = deepstream('localhost:6020');
-    client.login({username: 'ds-simple-input-' + client.getUid()});
+    client.login({username: 'user' + client.getUid()});
     return client;
   }
 })();

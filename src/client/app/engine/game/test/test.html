@@ -1,5 +1,44 @@
-<md-input-container>
-  <label>Player Name</label>
-  <input type="text" ng-model="vm.input" ng-change="vm.inputChange()">
-  {{vm.input}}
-</md-input-container>
+
+<div flex layout="row" layout-align="space-around">
+  <md-input-container>
+    <label>Player Name</label>
+    <input type="text" ng-model="vm.player.name" ng-change="vm.updatePlayer('name', vm.player.name)" ng-disabled="vm.player.ready" >
+  </md-input-container>
+  <md-input-container>
+    <md-select ng-model="vm.player.deck" ng-change="vm.updatePlayer('deck', vm.player.deck)" placeholder="Select your deck" ng-disabled="vm.player.ready">
+      <md-option ng-value="deck._id" ng-repeat="deck in vm.decks">{{ deck.name }}</md-option>
+    </md-select>
+  </md-input-container>
+  <md-switch ng-model="vm.player.ready" ng-change="vm.updatePlayer('ready', vm.player.ready)" ng-disabled="!vm.player.name || !vm.player.deck">
+    {{vm.getStatus(vm.player)}}
+  </md-switch>
+</div>
+<div ng-if="vm.opponent" flex layout="row" layout-align="space-around">
+  <md-input-container>
+    <label>Opponent</label>
+    <input type="text" ng-model="vm.opponent.name" disabled>
+  </md-input-container>
+  <md-input-container>
+    <md-select disabled ng-model="vm.opponent.deck" placeholder="Opponent's deck">
+      <md-option ng-value="deck._id" ng-repeat="deck in vm.decks">{{ deck.name }}</md-option>
+    </md-select>
+  </md-input-container>
+  <md-switch ng-model="vm.opponent.ready" disabled>{{vm.getStatus(vm.opponent)}}</md-switch>
+</div>
+
+<div>
+  <div ng-show="!vm.player.ready || !vm.opponent.ready">
+    Waiting for players to get ready
+  </div>
+  <div ng-hide="!vm.player.ready || !vm.opponent.ready">
+    Loading game
+    <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+  </div>
+</div>
+
+
+
+
+
+
+

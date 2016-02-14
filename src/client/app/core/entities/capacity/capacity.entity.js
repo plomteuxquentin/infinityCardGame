@@ -20,7 +20,7 @@
       this.cout = Capacity.BASE_COST;
       this.effectFunction = (effectFunction || function() { console.warn('Pas d\'effet');});
 
-      console.log('Capacity ' + this.name + ' created');
+      //console.log('Capacity ' + this.name + ' created');
     }
 
     Capacity.prototype = Object.create(Base.prototype);

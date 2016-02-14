@@ -20,7 +20,7 @@
       this.description = description;
       this.color = (color || Sphere.DEFAULT_COLOR);
 
-      console.log('Sphere ' + this.name + ' created');
+      //console.log('Sphere ' + this.name + ' created');
     }
 
     Sphere.prototype = Object.create(Base.prototype);

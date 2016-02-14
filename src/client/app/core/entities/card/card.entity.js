@@ -24,7 +24,7 @@
       this.spheres = (spheres || []);
       this.avatar = avatar;
 
-      console.log('Card ' + this.name + ' created');
+      //console.log('Card ' + this.name + ' created');
     }
 
     Card.prototype = Object.create(Base.prototype);

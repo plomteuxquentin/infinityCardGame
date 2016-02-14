@@ -11,6 +11,13 @@
 @color_spinner: #F58A00;
 
 
+// Variables
+@root: "./../app";
+
+@import "@{root}/home/home.less";
+@import "@{root}/entities/entities.less";
+
+
 
 html, body {
   font-family: 'Roboto', sans-serif;
@@ -66,8 +73,6 @@ md-sidenav  md-list {
   padding-right: 1*8px;
   padding-top: 5px;
   background-color: @color_background;
-
-
 }
 
 #content md-icon.avatar {
@@ -244,137 +249,6 @@ form .progress {
   background: orange;
   width: 0;
 }
-
-.createMember__picture {
-  cursor: pointer;
-}
-
-.createMember__picture__image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.createMember__picture__icon {
-  border-radius: 50%;
-  zoom:1.75;
-}
-
-
-.members-grid___tile {
-  background-color:@color_primary;
-  cursor: pointer;
-  overflow: hidden;
-  -webkit-filter: grayscale(100%) opacity(50%); filter: grayscale(100%), opacity(50%)opacity(50%);
-  -webkit-filter: ; filter: ;
-
-}
-
-.members-grid___tile:focus {
-  outline: none;
-  border: 0;
-}
-
-.members-grid___tile_selected {
-  background-color:@color_accent;
-  -webkit-filter: none; filter: none;
-
-}
-
-.members-grid___tile__icon {
-  zoom:3;
-  svg {
-    fill:@color_icon;
-  }
-}
-
-.session-detail__seanceLeft_1 {
-  color:@color_primary;
-}
-.session-detail__seanceLeft_0 {
-  color:@color_accent;
-}
-.session-detail__seanceLeft_demo {
-  color:@color_divider;
-}
-
-.profilt__contact__seance-left_number {
-  color:@color_primary;
-}
-.profilt__contact__seance-left_text {
-  color:@color_text_secondary;
-}
-
-.profil__contact__item {
-  svg {
-    fill:@color_primary
-  }
-}
-
-.profil__contact__item:hover {
-  cursor: pointer;
-  svg {
-    fill: @color_accent
-  }
-}
-
-
-.dashboard__card__picture {
-}
-
-.dashboard__card__picture__icon {
-  zoom:3;
-  svg {
-    fill: @color_divider;
-
-  }
-}
-
-
-
-
-
-.sphere {
-  border:1px solid #B6B6B6;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  margin:3px;
-}
-
-
-
-
-.card{
-  width: 150px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.card__attributs {
-  position: relative;
-  color: #457fa3;
-  background-color:inherit;
-  border-radius: 30px;
-  width: 30%;
-  margin:auto;
-}
-
-.card.joker .card__name {
-  color:#457fa3;
-  background-color:white;
-  border-radius: 30px;
-  width: 90%;
-  margin:auto;
-  margin-bottom: 100%;
-  margin-top: 0;
-}
-
-
-
-
-
 
 .ngplus-overlay-background {
   position: absolute;
